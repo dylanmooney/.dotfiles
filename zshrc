@@ -12,7 +12,7 @@ alias uprefs='source ~/.zshrc'
 # Customize Prompt(s)
 
 PROMPT='
-%1~ %L %F{red}$%F{reset_color} '
+%1~ %F{red}$%F{reset_color} '
 
 
 # Add Locations to $PATH Variable
