@@ -1,6 +1,13 @@
-# Set Variables
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
 
-# Change ZSH Options
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '%b'
+ 
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='%n in ${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
 
 # Create Aliases
 
@@ -13,6 +20,8 @@ alias uprefs='source ~/.zshrc'
 
 PROMPT='
 %1~ %F{red}$%F{reset_color} '
+
+RPROMPT='%F{yellow}${vcs_info_msg_0_}%F{rest_color}'
 
 
 # Add Locations to $PATH Variable
