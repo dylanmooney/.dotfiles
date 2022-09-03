@@ -9,35 +9,27 @@
 - link:
     ~/.zshrc: zsh/zshrc
     ~/.gitconfig: git/gitconfig
-    ~/.config/fish/config.fish: fish/config.fish
 
 - create:
     - ~/work
+
 - shell:
+    # Remove login message
+    - command: 'touch ~/.hushlogin'
     # Homebrew setup
     - command: './brew/install.sh'
       stdout: true
       stderr: true
-    # Pip packages
-    - command: 'sudo ./pip/install.sh'
-      stdout: true
-      stderr: true
-    # Remove login message
-    - command: 'touch ~/.hushlogin'
-      stdout: true
-      stderr: true
     # Set default shell to fish
     - command: 'echo /usr/local/bin/fish | sudo tee -a /etc/shells'
-      stdout: true
-      stderr: true
     - command: chsh -s /usr/local/bin/fish
       stdout: true
       stderr: true
-    # Fish setup
+    # Fish Plugin installation
     - command: './fish/install.fish'
       stdout: true
       stderr: true
 
-# Symlink custom fish plugins
 - link:
+    ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/functions/_tide_item_git.fish: fish/functions/_tide_item_git.fish
