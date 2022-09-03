@@ -6,9 +6,12 @@ tap "homebrew/core"
 
 # Packages
 brew "fish"
+brew "fisher"
 brew "git"
 brew "gh"
 brew "micro"
+brew "python3"
+brew "pipx"
 brew 'svn' # Required for fonts
 
 # Applications
@@ -25,4 +28,4 @@ cask "visual-studio-code"
 
 # Fonts
 cask "font-fira-code"
-cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
