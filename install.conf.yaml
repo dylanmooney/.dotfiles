@@ -18,6 +18,10 @@
     - command: './brew/install.sh'
       stdout: true
       stderr: true
+    # Pip packages
+    - command: 'sudo ./pip/install.sh'
+      stdout: true
+      stderr: true
     # Remove login message
     - command: 'touch ~/.hushlogin'
       stdout: true
@@ -29,3 +33,11 @@
     - command: chsh -s /usr/local/bin/fish
       stdout: true
       stderr: true
+    # Fish setup
+    - command: './fish/install.fish'
+      stdout: true
+      stderr: true
+
+# Symlink custom fish plugins
+- link:
+    ~/.config/fish/functions/_tide_item_git.fish: fish/functions/_tide_item_git.fish
