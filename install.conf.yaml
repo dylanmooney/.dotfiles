@@ -18,6 +18,10 @@
     - command: './brew/install.sh'
       stdout: true
       stderr: true
+    # Pip packages
+    - command: 'sudo ./pip/install.sh'
+      stdout: true
+      stderr: true
     # Remove login message
     - command: 'touch ~/.hushlogin'
       stdout: true
