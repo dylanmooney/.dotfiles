@@ -9,6 +9,7 @@ brew "fish"
 brew "fisher"
 brew "git"
 brew "gh"
+brew "mas"
 brew "micro"
 brew "python3"
 brew 'svn' # Required for fonts
@@ -16,12 +17,10 @@ brew 'terminal-notifier'
 
 # Applications
 cask "brave-browser"
-cask "bitwarden"
 cask "docker"
 cask "figma"
 cask "firefox-developer-edition"
 cask "google-drive"
-cask "keka"
 cask "microsoft-office"
 cask "postman"
 cask "sizzy"
@@ -30,3 +29,9 @@ cask "visual-studio-code"
 # Fonts
 cask "font-fira-code"
 cask "font-jetbrains-mono-nerd-font"
+
+# Mac App Store
+mas "Bitwarden", id: 1352778147
+mas "CleanMyMac X", id: 1339170533
+mas "The Unarchiver", id: 425424353
+mas "Spark – Email App by Readdle", id: 1176895641
