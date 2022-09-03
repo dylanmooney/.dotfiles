@@ -33,3 +33,7 @@
 - link:
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/functions/_tide_item_git.fish: fish/functions/_tide_item_git.fish
+
+- shell:
+    # Apply Mac Settings
+    - command: './macos/install.sh'
