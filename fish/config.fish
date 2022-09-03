@@ -13,7 +13,7 @@ if status is-interactive
     
     set -U tide_right_prompt_items git
     set -U tide_git_color_branch FAD649
-
+    set -U tide_git_icon ""
 
     # Setup VSCode code command
     function code --description 'Open VSCode'
