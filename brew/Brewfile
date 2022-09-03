@@ -32,6 +32,7 @@ cask "font-jetbrains-mono-nerd-font"
 
 # Mac App Store
 mas "Bitwarden", id: 1352778147
+mas "Broadcasts", id: 1469995354
 mas "CleanMyMac X", id: 1339170533
 mas "The Unarchiver", id: 425424353
 mas "Spark – Email App by Readdle", id: 1176895641
