@@ -1,12 +1,8 @@
-# This is Git's per-user configuration file.
 [core]
-	editor = nano
+	editor = micro
 [user]
 	email = dylan@dylanmooney.co.uk
 	name = Dylan Mooney
-# Please adapt and uncomment the following lines:
-#	name = Developer
-#	email = developer@Dylans-MacBook-Pro.local
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
