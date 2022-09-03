@@ -13,6 +13,7 @@ brew "micro"
 brew "python3"
 brew "pipx"
 brew 'svn' # Required for fonts
+brew 'terminal-notifier'
 
 # Applications
 cask "brave-browser"
