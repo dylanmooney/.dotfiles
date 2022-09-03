@@ -1,0 +1,21 @@
+# Disable Gatekeeper
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Change ZSH Options
+zstyle ':vcs_info:git:*' formats '%b'
+
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='%n in ${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
+
+# Create Aliases
+alias ls='ls -lFAh'
+
+# Customize Prompt
+PROMPT='%1~ %F{red}$%F{reset_color} '
+
+RPROMPT='%F{yellow}${vcs_info_msg_0_}%F{rest_color}'

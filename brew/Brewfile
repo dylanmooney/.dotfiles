@@ -9,8 +9,7 @@ brew "fish"
 brew "git"
 brew "gh"
 brew "micro"
-brew "nvm"
-brew 'svn'
+brew 'svn' # Required for fonts
 
 # Applications
 cask "brave-browser"
