@@ -1,0 +1,29 @@
+# Taps
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+
+# Packages
+brew "fish"
+brew "git"
+brew "gh"
+brew "micro"
+brew "nvm"
+brew 'svn'
+
+# Applications
+cask "brave-browser"
+cask "bitwarden"
+cask "docker"
+cask "figma"
+cask "firefox-developer-edition"
+cask "keka"
+cask "microsoft-office"
+cask "postman"
+cask "sizzy"
+cask "visual-studio-code"
+
+# Fonts
+cask "font-fira-code"
+cask "font-jetbrains-mono"

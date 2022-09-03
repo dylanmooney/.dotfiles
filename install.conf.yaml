@@ -7,13 +7,12 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc:
     ~/.gitconfig:
-
-      # Fish shell config files
     ~/.config/fish/config.fish: fish/config.fish
 
 - create:
     - ~/work
-# - shell:
-#  - [git submodule update --init --recursive, Installing submodules]
+- shell:
+    - command: './brew/install.sh'
+      stdout: true
+      stderr: true
