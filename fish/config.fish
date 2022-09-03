@@ -1,8 +1,5 @@
 if status is-interactive
 
-    # Aliases
-    alias ls="pls"
-
     # Disable Gatekeeper
     set -gx HOMEBREW_CASK_OPTS --no-quarantine
 
@@ -17,6 +14,7 @@ if status is-interactive
     set -U tide_right_prompt_items git
     set -U tide_git_color_branch FAD649
 
+
     # Setup VSCode code command
     function code --description 'Open VSCode'
         set location "$PWD/$argv"
@@ -24,3 +22,5 @@ if status is-interactive
     end
 
 end
+
+
