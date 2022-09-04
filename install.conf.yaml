@@ -9,10 +9,10 @@
 - link:
     ~/.zshrc: zsh/zshrc
     ~/.gitconfig: git/gitconfig
+    ~/.terminal: macos/minimal.terminal
 
 - create:
     - ~/work
-
 - shell:
     # Remove login message
     - command: 'touch ~/.hushlogin'
