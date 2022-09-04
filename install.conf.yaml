@@ -31,6 +31,7 @@
       stderr: true
 
 - link:
+    # Symlink fish configuration
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/functions/_tide_item_git.fish: fish/functions/_tide_item_git.fish
 
